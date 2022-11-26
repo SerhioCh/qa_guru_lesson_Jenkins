@@ -19,10 +19,10 @@ public class TestBase {
         Configuration.baseUrl = "https://demoqa.com";
 
         Configuration.browserCapabilities = capabilities;
-        Configuration.browser = System.getProperty("browser");
-        Configuration.browserVersion = System.getProperty("version");
-        Configuration.browserSize = System.getProperty("windowSize");
-        Configuration.remote = System.getProperty("remote");
+        Configuration.browser = System.getProperty("browser","chrome");
+        Configuration.browserVersion = System.getProperty("version","105");
+        Configuration.browserSize = System.getProperty("windowSize","1920x1080");
+        Configuration.remote = System.getProperty("remote","https://user1:1234@selenoid.autotests.cloud/wd/hub");
         if (System.getProperty("remote") != null) {
             Configuration.remote = System.getProperty("remote");
         }

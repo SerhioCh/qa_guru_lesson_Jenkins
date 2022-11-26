@@ -15,7 +15,7 @@ import static io.qameta.allure.Allure.step;
 public class RegistrationFormWithPageObjectsTests extends TestBase {
     RegistrationFormPage registrationFormPage = new RegistrationFormPage();
 
-@Tag("Test1")
+
 @Test
     void fillFormTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());

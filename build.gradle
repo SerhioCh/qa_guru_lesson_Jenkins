@@ -46,8 +46,11 @@ tasks.withType(Test) {
     }
 }
 
-task Test1(type: Test) {
-    useJUnitPlatform {
-        includeTags "Test1"
-    }
+tasks.withType(Test) {
+    systemProperties(System.getProperties())
+    useJUnitPlatform()
+}
+
+test {
+    useJUnitPlatform()
 }

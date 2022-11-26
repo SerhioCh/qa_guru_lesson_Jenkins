@@ -4,6 +4,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.*;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import qa.guru.helpers.Attach;
 import qa.guru.pages.RegistrationFormPage;
@@ -14,8 +15,8 @@ import static io.qameta.allure.Allure.step;
 public class RegistrationFormWithPageObjectsTests extends TestBase {
     RegistrationFormPage registrationFormPage = new RegistrationFormPage();
 
-
-    @Test
+@Tag("Test1")
+@Test
     void fillFormTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
         step("Открываем главную страницу", () -> {

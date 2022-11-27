@@ -1,0 +1,12 @@
+qa_guru_15_bot
+5731948449:AAFgXiJw866olv9lb7B_CGm1O1VEN43IFeM
+-1001579859710
+
+https://api.telegram.org/bot5731948449:AAFgXiJw866olv9lb7B_CGm1O1VEN43IFeM/getUpdates
+JSONVue
+
+
+
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-1001579859710", "text": "HELLO PEPYA", "disable_notification": true}' https://api.telegram.org/bot5731948449:AAFgXiJw866olv9lb7B_CGm1O1VEN43IFeM/sendMessage
+java -DconfigFile=notifications\telegram.json -jar notifications/allure-notifications-4.2.1.jar
+
